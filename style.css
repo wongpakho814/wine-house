@@ -85,6 +85,44 @@ section {
 }
 /* End of navbar */
 
+/* Page buttons */
+.page-btn {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;  
+}
+
+.page-btn img {
+  width: 4rem;
+  opacity: 0.4;
+  cursor: pointer;  
+  transition: opacity 0.2s;
+}
+
+.page-btn img:hover {
+  opacity: 1;  
+}
+
+.left-btn {
+  left: 4rem;
+}
+
+.left-btn img {
+  transform: rotate(-90deg);  
+}
+
+.right-btn {
+  right: 4rem;
+}
+
+.right-btn img {
+  transform: rotate(90deg);  
+}
+/* End of page buttons */
+
 /* Section 1 */
 .section-1-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
