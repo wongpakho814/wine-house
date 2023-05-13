@@ -39,20 +39,24 @@ section {
 .navbar {
   position: fixed;
   z-index: 100;
-  width: 100%;  
+  width: 100%;
   top: 1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
+.menu {
+  display: none;
+}
+
 .logo {
-  height: 6rem;  
+  height: 6rem;
 }
 
 .nav-list {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .nav-link {
@@ -60,11 +64,11 @@ section {
   color: #fff;
   width: 15rem;
   margin: 0 3rem;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   border: 0.1rem solid #fff;
   text-align: center;
   padding: 0.2rem 0;
-  letter-spacing: 0.1rem; 
+  letter-spacing: 0.1rem;
   position: relative;
   overflow: hidden;
 }
@@ -83,7 +87,7 @@ section {
 }
 
 .nav-link:hover::before {
-  left: 110%;  
+  left: 110%;
 }
 /* End of navbar */
 
@@ -94,18 +98,18 @@ section {
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
-  border: none;  
+  border: none;
 }
 
 .page-btn img {
   width: 4rem;
   opacity: 0.4;
-  cursor: pointer;  
+  cursor: pointer;
   transition: opacity 0.2s;
 }
 
 .page-btn img:hover {
-  opacity: 1;  
+  opacity: 1;
 }
 
 .left-btn {
@@ -113,7 +117,7 @@ section {
 }
 
 .left-btn img {
-  transform: rotate(-90deg);  
+  transform: rotate(-90deg);
 }
 
 .right-btn {
@@ -121,7 +125,7 @@ section {
 }
 
 .right-btn img {
-  transform: rotate(90deg);  
+  transform: rotate(90deg);
 }
 /* End of page buttons */
 
@@ -130,35 +134,35 @@ section {
   position: fixed;
   z-index: 100;
   bottom: 2rem;
-  left: 3rem;  
+  left: 3rem;
 }
 
 .progress {
   margin: 1rem 0;
-  text-align: center;  
+  text-align: center;
 }
 
 .progress h2 {
   font-size: 2.5rem;
   font-weight: 300;
-  color: #fff;  
+  color: #fff;
 }
 
 .circle-wrapper {
-  display: flex;  
+  display: flex;
 }
 
 .circle {
   width: 1rem;
   height: 1rem;
   border: 0.1rem solid #fff;
-  border-radius: 50%;  
+  border-radius: 50%;
   margin: 0 0.3rem;
   transition: background-color 0.3s;
 }
 
 .circle-1 {
-  background-color: #ddd;  
+  background-color: #ddd;
 }
 /* End of progress bar */
 
@@ -284,7 +288,7 @@ section {
 
 .grapes-img:hover {
   opacity: 1;
-  transform: scale(2);  
+  transform: scale(2);
 }
 /* End of section 3 */
 
@@ -312,7 +316,7 @@ section {
 }
 
 .section-4-heading {
-  font-size: 10rem;  
+  font-size: 10rem;
   font-weight: 300;
   text-align: center;
   margin-bottom: 7rem;
@@ -347,18 +351,18 @@ section {
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: #ddd;
-  margin: 1rem 0;  
+  margin: 1rem 0;
 }
 
 .footer-list li:first-child {
   text-transform: uppercase;
-  color: #fff;  
+  color: #fff;
 }
 
 .footer-img {
   width: 60rem;
   margin: 0 20rem;
-  opacity: 0.9;  
+  opacity: 0.9;
 }
 
 .copyright {
@@ -368,6 +372,279 @@ section {
   font-weight: 600;
   text-align: center;
   color: #eee;
-  letter-spacing: 0.2rem;  
+  letter-spacing: 0.2rem;
 }
 /* End of section 5 */
+
+/* Responsiveness */
+@media screen and (max-width: 1600px) {
+  .sale-bag {
+    width: 35rem;
+  }
+
+  .wine-bottle {
+    width: 65rem;
+  }
+
+  .footer-img {
+    width: 45rem;
+    margin: 0 12rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .sale-bag {
+    width: 30rem;
+  }
+
+  .wine-bottle {
+    width: 60rem;
+  }
+
+  .footer-img {
+    width: 35rem;
+    margin: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-link {
+    margin: 0 1.5rem;
+  }
+
+  .section-1-heading-wrapper {
+    width: 80%;
+  }
+
+  .section-1-heading {
+    font-size: 8rem;
+  }
+
+  .sale-bag {
+    width: 25rem;
+  }
+
+  .sale-btn {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.7rem;
+  }
+
+  .wine-bottle {
+    width: 50rem;
+  }
+
+  .footer-img {
+    width: 25rem;
+    margin: 0 7rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    justify-content: start;
+    padding-left: 2rem;
+  }
+
+  .menu {
+    display: block;
+    width: 4rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-line {
+    width: 100%;
+    height: 0.3rem;
+    background-color: #d50000;
+    transition: transform 0.5s;
+  }
+
+  .change .menu-line-1 {
+    transform: rotate(40deg) translate(0.5rem, 1rem);
+  }
+
+  .change .menu-line-2 {
+    transform: translate(-0.2rem, 2rem);
+  }
+
+  .change .menu-line-3 {
+    transform: rotate(-40deg) translate(0.5rem, -1rem);
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 5rem;
+    right: -21rem;
+    flex-direction: column;
+    height: calc(100vh - 5rem);
+    background-color: #333;
+    justify-content: start;
+    padding: 2rem;
+    border-radius: 0.5rem 0 0 0;
+    transition: right 0.5s;
+  }
+
+  .change .nav-list {
+    right: 0;
+  }
+
+  .nav-link {
+    margin: 1rem;
+  }
+
+  .section-2-wrapper {
+    flex-direction: column;
+  }
+
+  .sale {
+    order: 1;
+  }
+
+  .section-3-heading {
+    font-size: 12rem;
+  }
+
+  .frame-img {
+    width: 70rem;
+  }
+
+  .grapes-img {
+    width: 25rem;
+  }
+
+  .section-4-heading {
+    font-size: 8rem;
+  }
+
+  .new-wines-img {
+    width: 60rem;
+  }
+
+  .section-5-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-img {
+    width: 20rem;
+    order: 1;
+  }
+
+  .footer-list {
+    width: 20rem;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left-btn {
+    left: 2rem;
+  }
+
+  .right-btn {
+    right: 2rem;
+  }
+
+  .progress-wrapper {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-1-heading {
+    font-size: 6rem;
+  }
+
+  .sale-bag {
+    width: 20rem;
+  }
+
+  .wine-bottle {
+    width: 40rem;
+  }
+
+  .section-3-heading {
+    font-size: 11rem;
+    opacity: 0.7;
+  }
+
+  .frame-img {
+    width: 60rem;
+  }
+
+  .new-wines-img {
+    width: 45rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-1-heading {
+    font-size: 4rem;
+  }  
+
+  .sale-bag {
+    width: 15rem;
+  }
+
+  .wine-bottle {
+    width: 30rem;
+  }
+
+  .sale-btn {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  .section-3-heading {
+    font-size: 10rem;
+  }
+
+  .frame-img {
+    width: 35rem;
+  }
+
+  .section-4-heading {
+    font-size: 6rem;
+  }
+
+  .new-wines-img {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+
+  .left-btn {
+    left: 0.5rem;
+  }
+
+  .right-btn {
+    right: 0.5rem;
+  }
+
+  .nav-list {
+    top: 6.5rem;
+  }
+
+  .section-3-heading {
+    font-size: 8rem;
+  }
+
+  .grapes-img {
+    width: 15rem;
+  }
+
+  .grapes-img:hover {
+    width: 25rem;
+  }
+}
+/* End of responsiveness */

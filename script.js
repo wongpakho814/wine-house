@@ -1,3 +1,11 @@
+// Menu icon
+const menu = document.querySelector(".menu");
+
+menu.addEventListener("click", () => {
+  document.querySelector(".navbar").classList.toggle("change");  
+});
+// End of menu icon
+
 // Scroll effect and progress bar
 let counter1 = 0;
 let counter2 = 1;
