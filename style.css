@@ -123,6 +123,38 @@ section {
 }
 /* End of page buttons */
 
+/* Progress bar */
+.progress-wrapper {
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  left: 3rem;  
+}
+
+.progress {
+  margin: 1rem 0;
+  text-align: center;  
+}
+
+.progress h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;  
+}
+
+.circle-wrapper {
+  display: flex;  
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid #fff;
+  border-radius: 50%;  
+  margin: 0 0.3rem;
+}
+/* End of progress bar */
+
 /* Section 1 */
 .section-1-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
